@@ -10,7 +10,7 @@ TO DO list
 - [ ] Crear un sistema de personalización de carros en los que se puedan agregar nuevas llantas, nuevas texturas y cambiar la estética del carro en general. 
 - [ ] Implementar un sistema de editor en el que un Level Designer pueda diseñar una pista diferente a la que ya existe y agregar modelos 3D fácilmente. 
 - [ ] Cambiar la mecánica de giro (control) del vehículo para que solamente pueda moverse entre carriles y no libremente como lo hace actualmente. Piense en esta opción como si fuera un Subway Surfer.
-- [ ] Desarrollar una mecánica de derrape para que el carro se deslice por el suelo cuando las curvas sean muy pronunciadas.
+- [X] Desarrollar una mecánica de derrape para que el carro se deslice por el suelo cuando las curvas sean muy pronunciadas.
 
 Extras
 - [X] Poder editar el personaje con diferentes estadisticas.
