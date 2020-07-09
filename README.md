@@ -17,6 +17,10 @@ Extras
 - [X] Varias circuitos posibles.
 - [X] Diferentes tipos de modos de juego.
 
+# Unity Information
+Unity Version: 2019.4.0f1</p>
+
+
 ## Patrones de diseño implementados
 
 * Singleton
