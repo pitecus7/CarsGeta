@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using System;
 
 namespace KartGame.KartSystems
 {
@@ -15,6 +16,16 @@ namespace KartGame.KartSystems
             public string PowerUpID;
             public float ElapsedTime;
             public float MaxTime;
+        }
+        public float driftPower;
+        public void Drift()
+        {
+           driftPower = 2f;
+        }
+
+        public void StopDrift()
+        {
+            driftPower = 1;
         }
 
         /// <summary>
@@ -310,7 +321,8 @@ namespace KartGame.KartSystems
             float finalAcceleration = finalAccelPower * accelRamp;
 
             // apply inputs to forward/backward
-            float turningPower = turnInput * finalStats.Steer;
+
+            float turningPower = turnInput * finalStats.Steer*driftPower;
 
             Quaternion turnAngle = Quaternion.AngleAxis(turningPower, Rigidbody.transform.up);
             Vector3 fwd = turnAngle * Rigidbody.transform.forward;
