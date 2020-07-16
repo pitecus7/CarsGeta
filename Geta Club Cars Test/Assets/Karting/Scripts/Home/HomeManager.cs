@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This class is in charge of managing HOME.
+/// </summary>
 public class HomeManager : MonoBehaviour
 {
     public UIMenuHandler UIHandler;
@@ -21,6 +24,11 @@ public class HomeManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// this a call when user change game mode.
+    /// </summary>
+    /// <param name="sender">Who send it</param>
+    /// <param name="e">Game mode to change</param>
     private void OnGameModeSelected(object sender, GameMode e)
     {
         GameManager.Instance.gameInformation.gameMode = e;
