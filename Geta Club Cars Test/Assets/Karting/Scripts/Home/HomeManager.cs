@@ -34,6 +34,11 @@ public class HomeManager : MonoBehaviour
         GameManager.Instance.gameInformation.gameMode = e;
     }
 
+    /// <summary>
+    /// this called when user changed the difficulty
+    /// </summary>
+    /// <param name="sender">Who object send it</param>
+    /// <param name="e">Difficulty to change</param>
     private void OnDifficultySelected(object sender, Difficulty e)
     {
         GameManager.Instance.gameInformation.difficulty = e;
@@ -43,7 +48,11 @@ public class HomeManager : MonoBehaviour
     {
         GameManager.Instance.gameInformation.map = e;
     }
-
+    /// <summary>
+    /// this method can be called by a eventhandler to change scene.
+    /// </summary>
+    /// <param name="sender">Object who send it</param>
+    /// <param name="e">isnt neccesary</param>
     private void GoToGameplay(object sender, EventArgs e)
     {
         GameManager.Instance.GoToGameplay();
